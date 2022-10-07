@@ -2,11 +2,11 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-:root{
+:root {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     --color-copy: #333;
@@ -25,19 +25,19 @@ footer {
     margin: 0 auto;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     padding-top: 7.75rem;
 }
 
-ul{
+ul {
     display: flex;
     list-style: none;
     padding: 0;
 }
 
-li{
+li {
     margin-right: 0.625rem;
 }
 
@@ -47,7 +47,8 @@ li{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000; /* vermelho / verde / azul / transparência - 0 - F */
+    background-color: #000;
+    /* vermelho / verde / azul / transparência - 0 - F */
     color: #fff;
 }
 
@@ -61,94 +62,96 @@ li{
     padding: 0 1rem;
 }
 
-.navbar-links{
+.navbar-links {
     justify-self: end;
 }
 
-.navbar-links li{
+.navbar-links li {
     font-size: 0.875rem;
     text-transform: uppercase;
     margin-right: 3rem;
 }
 
-.navbar-links a{
+.navbar-links a {
     color: #FFF;
     text-decoration: none;
 }
 
-.navbar-links a:hover{
+.navbar-links a:hover {
     color: var(--color-primary);
 }
 
-.logo-studion{
+.logo-studion {
     font-size: 2.375rem;
     font-weight: 900;
     line-height: 1ch;
     text-transform: uppercase;
 }
 
-.copy-primary{
+.copy-primary {
     color: var(--color-primary);
 }
 
-.logo-studion-subtitle{
+.logo-studion-subtitle {
     display: block;
     font-size: 0.875rem;
     font-weight: 300;
     text-align: right;
 }
 
-#slider{
+#slider {
     background-color: #000;
     background-size: cover;
     background-position: center;
     color: #FFF;
 }
 
-.slide{
+.slide {
     height: calc(100vh - 10rem);
     position: relative;
+    overflow: hidden;
 }
 
-.slide-bg-img{
+.slide-bg-img {
     height: 100%;
     object-fit: cover;
     object-position: center;
     width: 100%;
 }
 
-.slide-copy{
+.slide-copy {
     left: 50vw;
     position: absolute;
     top: 2rem;
 }
 
-.slide-copy h6{
+.slide-copy h6 {
     font-size: 0.8000rem;
     font-weight: 400;
     letter-spacing: 0.1875rem;
     text-transform: uppercase;
 }
 
-.slide-copy h2{
+.slide-copy h2 {
     font-size: 5rem;
     font-weight: 700;
     line-height: 5rem;
     text-transform: uppercase;
+    margin: 2.875rem 0;
 }
 
-.slide-copy h2 span{
+.slide-copy h2 span {
     display: block;
 }
 
-.btn{
+.btn {
     background: unset;
     border-radius: 5rem;
     cursor: pointer;
     font-size: .7375rem;
     font-weight: 700;
     min-height: 3.125rem;
-    padding: 1rem  2.5rem;
+    padding: 1rem 2.5rem;
     text-transform: uppercase;
 
     border: .125rem solid #FFF;
@@ -159,7 +162,7 @@ li{
 
 .btn:hover,
 .btn:active,
-.btn:focus{
+.btn:focus {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
     color: #FFF;
@@ -177,18 +180,18 @@ li{
     text-transform: uppercase;
 }
 
-.counter-container{
+.counter-container {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
     padding: 4.375rem 1rem;
 }
 
-.counter-container h3{
+.counter-container h3 {
     font-size: 2.1875rem;
 }
 
-.counter-container h3 small{
+.counter-container h3 small {
     display: block;
     font-size: 1.25rem;
 }
@@ -205,15 +208,15 @@ li{
     padding: 4.375rem;
 }
 
-.institucional-image{
+.institucional-image {
     max-width: 550px;
 }
 
-.institucional-copy{
+.institucional-copy {
     padding: 0 1.875rem 0 0;
 }
 
-.institucional-copy h6{
+.institucional-copy h6 {
     font-size: 0.675rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
@@ -221,7 +224,7 @@ li{
     margin: 0;
 }
 
-.institucional-copy h4{
+.institucional-copy h4 {
     font-size: 1rem;
     margin-top: 1rem;
 }
@@ -234,12 +237,12 @@ li{
     margin-bottom: 2.5rem;
 }
 
-.btn-institucional{
+.btn-institucional {
     background: var(--color-primary);
     color: #FFF;
 }
 
-.btn-institucional:hover{
+.btn-institucional:hover {
     background: unset;
     color: var(--color-copy);
 }
@@ -274,6 +277,7 @@ li{
 .quote-copy {
     background-color: #fff;
     padding: 5.625rem 4.375rem;
+    margin: 7.5625rem 0;
 }
 
 .quote-copy h6 {
@@ -304,13 +308,13 @@ li{
     color: var(--color-copy);
 }
 
-.footer{
+.footer {
     background-color: #000;
     color: #fff;
     text-align: center;
 }
 
-.footer-container{
+.footer-container {
     align-items: center;
     border-bottom: 0.1rem solid #FFF3;
     display: grid;
@@ -323,25 +327,25 @@ li{
     margin: 0;
 }
 
-.footer-form{
+.footer-form {
     align-items: center;
     display: grid;
     grid-template-columns: 9ch auto;
     gap: 1.375rem;
 }
 
-.footer-form label{
+.footer-form label {
     font-size: .875rem;
     font-weight: 300;
     line-height: 1rem;
 }
 
-.footer-form-email{
+.footer-form-email {
     display: grid;
     grid-template-columns: auto 3.375rem;
 }
 
-.footer-form input{
+.footer-form input {
     background-color: var(--color-primary);
     border: unset;
     color: #000;
@@ -351,21 +355,21 @@ li{
     padding: 1rem;
 }
 
-.footer-form input::placeholder{
+.footer-form input::placeholder {
     color: #000;
 }
 
-.footer-form button{
+.footer-form button {
     cursor: pointer;
     transition: 0.3s all ease;
 }
 
-.footer-form button:hover{
+.footer-form button:hover {
     background-color: #000;
     color: #FFF;
 }
 
-.footer-social{
+.footer-social {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: .5rem;
@@ -386,6 +390,6 @@ li{
     margin: 2.5rem 0;
 }
 
-.footer hr{
+.footer hr {
     border-color: #000;
 }
